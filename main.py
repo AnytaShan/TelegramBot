@@ -18,7 +18,7 @@ def start(message):
     markup.add(postcard_btn)
     end_btn = types.InlineKeyboardButton(text='Конец света')
     markup.add(end_btn)
-    bot.send_message(message.chat.id,text='Привет, {0.first_name}! Я доебутро_бот. Я могу: отправить открытку (Напиши "Открытка"); сказать сколько осталось дней до конца света (Напиши "Конец света") '.format(message.from_user), reply_markup=markup)
+    bot.send_message(message.chat.id,text='Привет, {0.first_name}! Я добрутро_бот. Я могу: отправить открытку (Напиши "Открытка"); сказать сколько осталось дней до конца света (Напиши "Конец света") '.format(message.from_user), reply_markup=markup)
 
 
 @bot.message_handler(commands=['help'])  #овет на команду help
